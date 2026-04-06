@@ -1,0 +1,13 @@
+{
+  "name": "dxf-architect",
+  "version": "1.0.0",
+  "description": "Genera y lee planos arquitectonicos en formato DXF. Crea plantas con muros, puertas, ventanas, cotas y cajetin.",
+  "author": "clowbot",
+  "dependencies": ["ezdxf"],
+  "commands": {
+    "create-plan": "Crear un plano arquitectonico DXF con habitaciones, puertas y ventanas",
+    "read-dxf": "Leer y analizar un archivo DXF existente",
+    "extract-dims": "Extraer todas las cotas de un DXF",
+    "extract-layers": "Listar capas y conteo de entidades"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "autocad-mcp": {
+      "command": "python",
+      "args": ["-m", "autocad_mcp.server"],
+      "cwd": "./mcp-servers/autocad-mcp",
+      "env": {
+        "AUTOCAD_MCP_BACKEND": "ezdxf"
+      },
+      "description": "MCP server para AutoCAD/DXF - 22 tools, ~130 operaciones. Backend ezdxf (headless, sin AutoCAD)."
+    },
+    "ifc-bonsai-mcp": {
+      "command": "python",
+      "args": ["-m", "blender_mcp.server"],
+      "cwd": "./mcp-servers/ifc-bonsai-mcp",
+      "env": {},
+      "description": "MCP server para BIM/IFC via Blender + Bonsai. 50+ tools para modelos IFC. Requiere Blender 4.4+."
+    }
+  }
+}
