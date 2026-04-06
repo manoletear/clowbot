@@ -8,10 +8,13 @@ clowbot/
 │   ├── autocad-mcp/          # MCP server para DXF/AutoCAD (Prumputira/autocad-mcp)
 │   └── ifc-bonsai-mcp/       # MCP server para BIM/IFC (Show2Instruct/ifc-bonsai-mcp)
 ├── skills/
-│   └── dxf-architect/         # Skill propia para generar planos DXF
-│       ├── dxf_architect.py   # Modulo principal
-│       ├── skill.json         # Metadata de la skill
-│       └── casa_ejemplo.dxf   # Plano de ejemplo generado
+│   ├── dxf-architect/         # Skill propia para generar planos DXF
+│   │   ├── dxf_architect.py   # Modulo principal
+│   │   ├── skill.json         # Metadata de la skill
+│   │   └── casa_ejemplo.dxf   # Plano de ejemplo generado
+│   └── nano-banana-prompts/   # Skill de Nano Banana Pro (YouMind-OpenLab)
+│       ├── references/        # 10,000+ prompts organizados por categoria
+│       └── SKILL.md           # Documentacion de uso
 ├── mcp-config.json            # Configuracion de MCP servers
 └── CLAUDE.md                  # Este archivo
 ```
@@ -40,6 +43,15 @@ Skill propia para generar planos arquitectonicos DXF con:
 - Textos con nombre de habitacion y area
 - Cajetin con titulo, escala, autor y area total
 - Capas organizadas (MUROS, COTAS, TEXTOS, PUERTAS, VENTANAS, EJES, CAJETIN, MOBILIARIO)
+
+## Skill Nano Banana Pro Prompts (YouMind-OpenLab)
+
+Biblioteca de 10,000+ prompts curados para generacion de imagenes con Nano Banana Pro (Gemini).
+
+- **Categorias**: social media, e-commerce, YouTube thumbnails, avatares, comics, posters, game assets, infografias, web design
+- **Modos**: Busqueda directa por descripcion / Content Remix (pegar articulo y generar prompts)
+- **Sincronizacion**: Auto-update via GitHub Actions (2x al dia)
+- **Repo**: github.com/YouMind-OpenLab/nano-banana-pro-prompts-recommend-skill
 
 ### Uso rapido
 
