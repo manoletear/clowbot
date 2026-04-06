@@ -1,0 +1,14 @@
+{
+  "name": "clowbot-whatsapp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Bot de WhatsApp para agenda escolar con integracion Obsidian",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "node --watch bot.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc.9",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
